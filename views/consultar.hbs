@@ -9,13 +9,13 @@
                 </tr>
             </thead>
             <tbody>
-               {{#each agendamento}}
+               {{#each agendamentos}}
                 <tr>
-                    <td>{{dataTable.nome}}</td>
-                    <td>{{dataTable.endereco}}</td>
+                    <td>{{dataValues.nome}}</td>
+                    <td>{{dataValues.endereco}}</td>
                     <td>
-                        <a class="btn btn-primary" href="/editar/{{id}}" >Editar</a>
-                        <a class="btn btn-danger" href="/excluir/{{id}}">Excluir</a>
+                        <a class="btn btn-primary" href="/editar/{{dataValues.id}}" >Editar</a>
+                        <a class="btn btn-danger" href="/excluir/{{dataValues.id}}">Excluir</a>
                     </td>
                 </tr>
                 {{/each}}
